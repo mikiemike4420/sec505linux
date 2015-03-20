@@ -12,13 +12,13 @@ Please note that:
 
         * ISO10126 padding is deprecated -- replaced with PKCS7:
 
-+ $Rijndael.Padding = [System.Security.Cryptography.PaddingMode]::PKCS7
-- $Rijndael.Padding = [System.Security.Cryptography.PaddingMode]::ISO10126 
+		`+ $Rijndael.Padding = [System.Security.Cryptography.PaddingMode]::PKCS7`
+		`- $Rijndael.Padding = [System.Security.Cryptography.PaddingMode]::ISO10126`
 
         * explicit keysize and blocksize:
 
-+ $Rijndael.KeySize = 256
-+ $Rijndael.BlockSize = 128
+		`+ $Rijndael.KeySize = 256`
+		`+ $Rijndael.BlockSize = 128`
 
 * it is not necessarily secure to run "openssl enc -d -K ... -iv ..." on a system allowing other (not entirely trusted) users being logged in
 
